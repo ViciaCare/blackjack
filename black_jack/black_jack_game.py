@@ -97,3 +97,13 @@ def dealer_wins():
 def push():
     pass
 
+while True:
+    #greating massage
+    #create deck of cards
+    #set the number of the player's chips
+    #ask the player for his bet
+    #show the cards (except one card and cards dealer)
+    pass
+    while playing:
+        #ask player, if he wants to draw an additional card or stay with the current cards
+        pass
