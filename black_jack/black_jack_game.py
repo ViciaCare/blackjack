@@ -31,6 +31,7 @@ class Deck:
     def deal(self):
         pass
 
+
 class Hand:
     def __init__(self):
         self.cards = []
@@ -43,6 +44,7 @@ class Hand:
     def adjust_for_ace(self):
         pass
 
+
 class Chips:
     def __init__(self):
         self.total = 100
@@ -53,4 +55,25 @@ class Chips:
 
     def lose_bet(self):
         pass
+
+
+def take_bet():
+    pass
+
+
+def hit(deck, hand):
+    pass
+
+
+def hit_or_stand(deck, hand):
+    global playing
+    pass
+
+
+def show_some(player, dealer):
+    pass
+
+
+def show_all(player, dealer):
+    pass
 
