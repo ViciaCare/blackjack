@@ -120,24 +120,29 @@ def show_all(player, dealer):
     print('Player cards =', player.value)
 
 
-def player_busts():
-    pass
+def player_busts(player, dealer, chips):
+    print('The player has exceeded 21!')
+    chips.lose_bet()
 
 
-def player_wins():
-    pass
+def player_wins(player, dealer, chips):
+    print('Player win!')
+    chips.win_bet()
 
 
-def dealer_busts():
-    pass
+def dealer_busts(player, dealer, chips):
+    print('The dealer has exceeded 21!')
+    chips.win_bet()
 
 
-def dealer_wins():
-    pass
+def dealer_wins(player, dealer, chips):
+    print('Dealer win!')
+    chips.lose_bet()
 
 
-def push():
-    pass
+def push(player, dealer):
+    print('Draw!')
+
 
 while True:
     #greating massage
