@@ -86,12 +86,24 @@ def take_bet(chips):
 
 
 def hit(deck, hand):
-    pass
+    hand.add_card(deck.deal())
+    hand.adjust_for_ace()
 
 
 def hit_or_stand(deck, hand):
     global playing
-    pass
+    while True:
+        x = input("Do you want to take an extra card (h - Hit) or stay with the current cards (s - Stand)? Enter 'h' or 's'")
+
+        if x[0].lower() == 'h':
+            hit(deck, hand)
+        elif x[0].lower() == 's':
+            print("The player stays with the current cards. Dealer's move." )
+            playing = False
+        else:
+            print("Sorry, please try again.")
+            continue
+        break
 
 
 def show_some(player, dealer):
