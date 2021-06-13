@@ -145,12 +145,25 @@ def push(player, dealer):
 
 
 while True:
-    #greating massage
-    #create deck of cards
-    #set the number of the player's chips
-    #ask the player for his bet
-    #show the cards (except one card and cards dealer)
-    pass
+    print('Welcome to Blackjack game! Try to get as close to the sum of 21 as possible without exceeding it!\n\
+    The dealer takes additional cards until he receives an amount greater than 17. The ace counts as 1 or 11.')
+    deck = Deck()
+    deck.shuffle()
+
+    player_hand = Hand()
+    player_hand.add_card(deck.deal())
+    player_hand.add_card(deck.deal())
+
+    dealer_hand = Hand()
+    dealer_hand.add_card(deck.deal())
+    dealer_hand.add_card(deck.deal())
+
+    player_chips = Chips()
+
+    take_bet(player_chips)
+
+    show_some(player_hand, dealer_hand)
+
     while playing:
         #ask player, if he wants to draw an additional card or stay with the current cards
         pass
