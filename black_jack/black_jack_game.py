@@ -66,14 +66,23 @@ class Chips:
         self.bet = 0
 
     def win_bet(self):
-        pass
+        self.total += self.bet
 
     def lose_bet(self):
-        pass
+        self.total -= self.bet
 
 
-def take_bet():
-    pass
+def take_bet(chips):
+    while True:
+        try:
+            chips.bet = int(input("How many chips do you want to bet?"))
+        except ValueError:
+            print("Sorry the bet must be a number!")
+        else:
+            if chips.bet > chips.total:
+                print("Sorry your bet must not exceed ", chips.total)
+            else:
+                break
 
 
 def hit(deck, hand):
