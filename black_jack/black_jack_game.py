@@ -141,7 +141,7 @@ def dealer_wins(player, dealer, chips):
 
 
 def push(player, dealer):
-    print('Draw!')
+    print('Push!')
 
 
 while True:
