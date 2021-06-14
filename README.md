@@ -3,7 +3,7 @@
 ![](https://us.123rf.com/450wm/oorka/oorka1106/oorka110600007/9861019-vector-illustration-of-four-of-a-kind-aces.jpg?ver=6)
 ## Это проект карточная игра BlackJack в Python.
 ### Требования следующие:
-+  Простая текстовая версия игры [Игра Блэк-Джек](https://us.123rf.com/450wm/oorka/oorka1106/oorka110600007/9861019-vector-illustration-of-four-of-a-kind-aces.jpg?ver=6)
++  Простая текстовая версия игры [Игра Блэк-Джек](https://ru.wikipedia.org/wiki/%D0%91%D0%BB%D1%8D%D0%BA%D0%B4%D0%B6%D0%B5%D0%BA)
 +  В игре один игрок против компьютера-дилера (крупье)
 +  Игрок может остаться при тех же картах (stand) или запросить ещё карту (hit).
 +  Игрок может выбрать сумму, которую он ставит.
